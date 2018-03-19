@@ -1,0 +1,42 @@
+Basic Spherical Geometry
+c Cells
+1 1 -19.0  -1
+c 2 2 -1.85  +1 -2
+3 0        1
+
+c Surfaces
+1 SO 8.4
+
+c Data Cards
+c Materials
+M1 92235.64c 1
+c M2 4009.66c 1
+c Other Things
+mode N
+IMP:N 1 0
+TMP  6.63509e-9 0
+kcode 60000 20 120 220
+ksrc 0. 0. 0
+c Tallies
+f14:n 1
+f24:n 1
+f34:n 1
+f44:n 1
+f54:n 1
+f64:n 1
+f74:n 1
+f84:n 1
+f94:n 1
+f104:n 1
+f114:n 1
+e14:n 1e-10 100I 1e-9
+e24:n 1e-9 100I 1e-8
+e34:n 1e-8 100I 1e-7
+e44:n 1e-7 100I 1e-6
+e54:n 1e-6 100I 1e-5
+e64:n 1e-5 100I 1e-4
+e74:n 1e-4 100I 1e-3
+e84:n 1e-3 100I 1e-2
+e94:n 1e-2 100I .1
+e104:n .1 100I 1
+e114:n 1 100I 10
