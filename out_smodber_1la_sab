@@ -1,0 +1,1470 @@
+          Thread Name & Version = MCNP5, 1.60
+                                  _                                      
+            ._ _    _  ._   ._   |_                                      
+            | | |  (_  | |  |_)   _)                                     
+                            |                                            
+  +---------------------------------------------------------------------+
+  | Copyright 2010. Los Alamos National Security, LLC.  All rights      |
+  | reserved.                                                           |
+  |   This material was produced under U.S. Government contract         |
+  | DE-AC52-06NA25396 for Los Alamos National Laboratory, which is      |
+  | operated by Los Alamos National Security, LLC, for the U.S.         |
+  | Department of Los Energy. The Government is granted for itself and  |
+  | others acting on its behalf a paid-up, nonexclusive, irrevocable    |
+  | worldwide license in this material to reproduce, prepare derivative |
+  | works, and perform publicly and display publicly. Beginning five    |
+  | (5) years after 2010, subject to additional five-year worldwide     |
+  | renewals, the Government is granted for itself and others acting on |
+  | its behalf a paid-up, nonexclusive, irrevocable worldwide license   |
+  | in this material to reproduce, prepare derivative works, distribute |
+  | copies to the public, perform publicly and display publicly, and to |
+  | permit others to do so. NEITHER THE UNITED STATES NOR THE UNITED    |
+  | STATES DEPARTMENT OF ENERGY, NOR LOS ALAMOS NATIONAL SECURITY, LLC, |
+  | NOR ANY OF THEIR EMPLOYEES, MAKES ANY WARRANTY, EXPRESS OR IMPLIED, |
+  | OR ASSUMES ANY LEGAL LIABILITY OR RESPONSIBILITY FOR THE ACCURACY,  |
+  | COMPLETENESS, OR USEFULNESS OF ANY INFORMATION, APPARATUS, PRODUCT, |
+  | OR PROCESS DISCLOSED, OR REPRESENTS THAT ITS USE WOULD NOT INFRINGE |
+  | PRIVATELY OWNED RIGHTS.                                             |
+  +---------------------------------------------------------------------+
+  
+1mcnp     version 5.mpi ld=01252018                     03/18/18 22:56:09 
+ *************************************************************************                 probid =  03/18/18 22:56:09 
+ i=smodber_1la.inp out=out_smodber_1la_sab                                       
+
+         1-       Basic Spherical Geometry                                                        
+         2-       c Cells                                                                         
+         3-       1 1 -18.85  -1                                                                  
+         4-       2 2 -1.85   +1 -2                                                               
+         5-       3 3 -7.7    +2 -3                                                               
+         6-       4 0         +3                                                                  
+         7-                                                                                       
+         8-       c Surfaces                                                                      
+         9-       1 SO 5.1                                                                        
+        10-       2 SO 30.0                                                                       
+        11-       3 SO 35                                                                         
+        12-                                                                                       
+        13-       c Materials                                                                     
+        14-       M1 92235.64c 1                                                                  
+        15-       M2 4009.60c 1                                                                   
+        16-       MT2 be.60t                                                                      
+        17-       M3 26054.64c -72 28058.64c -10 24052.64c -18                                    
+        18-       c Other Things                                                                  
+        19-       mode N                                                                          
+        20-       IMP:N 1 1 1 0                                                                   
+        21-       MT2 be.69t                                                                      
+  fatal error.  data symbol mt2      is used more than once.
+        22-       TMP  6.635e-9 2.53e-8 6.635e-9 0                                                
+        23-       kcode 50000 20 120 220                                                          
+        24-       ksrc 0. 0. 0                                                                    
+        25-       c Tallies                                                                       
+        26-       f14:n 1                                                                         
+        27-       f24:n 1                                                                         
+        28-       f34:n 1                                                                         
+        29-       f44:n 1                                                                         
+        30-       f54:n 1                                                                         
+        31-       f64:n 1                                                                         
+        32-       f74:n 1                                                                         
+        33-       f84:n 1                                                                         
+        34-       f94:n 1                                                                         
+        35-       f104:n 1                                                                        
+        36-       f114:n 1                                                                        
+        37-       E14:n 1e-10 100I 1e-9                                                           
+        38-       E24:n 1e-9 100I 1e-8                                                            
+        39-       E34:n 1e-8 100I 1e-7                                                            
+        40-       E44:n 1e-7 100I 1e-6                                                            
+        41-       E54:n 1e-6 100I 1e-5                                                            
+        42-       E64:n 1e-5 100I 1e-4                                                            
+        43-       E74:n 1e-4 100I 1e-3                                                            
+        44-       E84:n 1e-3 100I 1e-2                                                            
+        45-       E94:n 1e-2 100I .1                                                              
+        46-       E104:n .1 100I 1                                                                
+        47-       E114:n 1 100I 10                                                                
+1     initial source from ksrc card.                                                                    print table 90
+
+ original number of points                             1
+    points not in any cell                       0
+    points in cells of zero importance           0
+    points in void cells                         0
+    points in ambiguous cells                    0
+ total points rejected                                 0
+ points remaining                                      1
+ points after expansion or contraction             50000
+ nominal source size                               50000
+
+ initial guess for k(eff.)                     20.000000
+
+ cycles to skip before tallying                      120
+
+ number of keff cycles that can be stored           6000
+
+ 
+  comment.  total fission nubar data are being used.
+
+1tally       14                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-10 mev   
+      1.00000E-10  to  1.08911E-10 mev   
+      1.08911E-10  to  1.17822E-10 mev   
+      1.17822E-10  to  1.26733E-10 mev   
+      1.26733E-10  to  1.35644E-10 mev   
+      1.35644E-10  to  1.44554E-10 mev   
+      1.44554E-10  to  1.53465E-10 mev   
+      1.53465E-10  to  1.62376E-10 mev   
+      1.62376E-10  to  1.71287E-10 mev   
+      1.71287E-10  to  1.80198E-10 mev   
+      1.80198E-10  to  1.89109E-10 mev   
+      1.89109E-10  to  1.98020E-10 mev   
+      1.98020E-10  to  2.06931E-10 mev   
+      2.06931E-10  to  2.15842E-10 mev   
+      2.15842E-10  to  2.24752E-10 mev   
+      2.24752E-10  to  2.33663E-10 mev   
+      2.33663E-10  to  2.42574E-10 mev   
+      2.42574E-10  to  2.51485E-10 mev   
+      2.51485E-10  to  2.60396E-10 mev   
+      2.60396E-10  to  2.69307E-10 mev   
+      2.69307E-10  to  2.78218E-10 mev   
+      2.78218E-10  to  2.87129E-10 mev   
+      2.87129E-10  to  2.96040E-10 mev   
+      2.96040E-10  to  3.04950E-10 mev   
+      3.04950E-10  to  3.13861E-10 mev   
+      3.13861E-10  to  3.22772E-10 mev   
+      3.22772E-10  to  3.31683E-10 mev   
+      3.31683E-10  to  3.40594E-10 mev   
+      3.40594E-10  to  3.49505E-10 mev   
+      3.49505E-10  to  3.58416E-10 mev   
+      3.58416E-10  to  3.67327E-10 mev   
+      3.67327E-10  to  3.76238E-10 mev   
+      3.76238E-10  to  3.85149E-10 mev   
+      3.85149E-10  to  3.94059E-10 mev   
+      3.94059E-10  to  4.02970E-10 mev   
+      4.02970E-10  to  4.11881E-10 mev   
+      4.11881E-10  to  4.20792E-10 mev   
+      4.20792E-10  to  4.29703E-10 mev   
+      4.29703E-10  to  4.38614E-10 mev   
+      4.38614E-10  to  4.47525E-10 mev   
+      4.47525E-10  to  4.56436E-10 mev   
+      4.56436E-10  to  4.65347E-10 mev   
+      4.65347E-10  to  4.74257E-10 mev   
+      4.74257E-10  to  4.83168E-10 mev   
+      4.83168E-10  to  4.92079E-10 mev   
+      4.92079E-10  to  5.00990E-10 mev   
+      5.00990E-10  to  5.09901E-10 mev   
+      5.09901E-10  to  5.18812E-10 mev   
+      5.18812E-10  to  5.27723E-10 mev   
+      5.27723E-10  to  5.36634E-10 mev   
+      5.36634E-10  to  5.45545E-10 mev   
+      5.45545E-10  to  5.54455E-10 mev   
+      5.54455E-10  to  5.63366E-10 mev   
+      5.63366E-10  to  5.72277E-10 mev   
+      5.72277E-10  to  5.81188E-10 mev   
+      5.81188E-10  to  5.90099E-10 mev   
+      5.90099E-10  to  5.99010E-10 mev   
+      5.99010E-10  to  6.07921E-10 mev   
+      6.07921E-10  to  6.16832E-10 mev   
+      6.16832E-10  to  6.25743E-10 mev   
+      6.25743E-10  to  6.34653E-10 mev   
+      6.34653E-10  to  6.43564E-10 mev   
+      6.43564E-10  to  6.52475E-10 mev   
+      6.52475E-10  to  6.61386E-10 mev   
+      6.61386E-10  to  6.70297E-10 mev   
+      6.70297E-10  to  6.79208E-10 mev   
+      6.79208E-10  to  6.88119E-10 mev   
+      6.88119E-10  to  6.97030E-10 mev   
+      6.97030E-10  to  7.05941E-10 mev   
+      7.05941E-10  to  7.14851E-10 mev   
+      7.14851E-10  to  7.23762E-10 mev   
+      7.23762E-10  to  7.32673E-10 mev   
+      7.32673E-10  to  7.41584E-10 mev   
+      7.41584E-10  to  7.50495E-10 mev   
+      7.50495E-10  to  7.59406E-10 mev   
+      7.59406E-10  to  7.68317E-10 mev   
+      7.68317E-10  to  7.77228E-10 mev   
+      7.77228E-10  to  7.86139E-10 mev   
+      7.86139E-10  to  7.95050E-10 mev   
+      7.95050E-10  to  8.03960E-10 mev   
+      8.03960E-10  to  8.12871E-10 mev   
+      8.12871E-10  to  8.21782E-10 mev   
+      8.21782E-10  to  8.30693E-10 mev   
+      8.30693E-10  to  8.39604E-10 mev   
+      8.39604E-10  to  8.48515E-10 mev   
+      8.48515E-10  to  8.57426E-10 mev   
+      8.57426E-10  to  8.66337E-10 mev   
+      8.66337E-10  to  8.75248E-10 mev   
+      8.75248E-10  to  8.84158E-10 mev   
+      8.84158E-10  to  8.93069E-10 mev   
+      8.93069E-10  to  9.01980E-10 mev   
+      9.01980E-10  to  9.10891E-10 mev   
+      9.10891E-10  to  9.19802E-10 mev   
+      9.19802E-10  to  9.28713E-10 mev   
+      9.28713E-10  to  9.37624E-10 mev   
+      9.37624E-10  to  9.46535E-10 mev   
+      9.46535E-10  to  9.55446E-10 mev   
+      9.55446E-10  to  9.64356E-10 mev   
+      9.64356E-10  to  9.73267E-10 mev   
+      9.73267E-10  to  9.82178E-10 mev   
+      9.82178E-10  to  9.91089E-10 mev   
+      9.91089E-10  to  1.00000E-09 mev   
+      total bin
+
+1tally       24                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-09 mev   
+      1.00000E-09  to  1.08911E-09 mev   
+      1.08911E-09  to  1.17822E-09 mev   
+      1.17822E-09  to  1.26733E-09 mev   
+      1.26733E-09  to  1.35644E-09 mev   
+      1.35644E-09  to  1.44554E-09 mev   
+      1.44554E-09  to  1.53465E-09 mev   
+      1.53465E-09  to  1.62376E-09 mev   
+      1.62376E-09  to  1.71287E-09 mev   
+      1.71287E-09  to  1.80198E-09 mev   
+      1.80198E-09  to  1.89109E-09 mev   
+      1.89109E-09  to  1.98020E-09 mev   
+      1.98020E-09  to  2.06931E-09 mev   
+      2.06931E-09  to  2.15842E-09 mev   
+      2.15842E-09  to  2.24752E-09 mev   
+      2.24752E-09  to  2.33663E-09 mev   
+      2.33663E-09  to  2.42574E-09 mev   
+      2.42574E-09  to  2.51485E-09 mev   
+      2.51485E-09  to  2.60396E-09 mev   
+      2.60396E-09  to  2.69307E-09 mev   
+      2.69307E-09  to  2.78218E-09 mev   
+      2.78218E-09  to  2.87129E-09 mev   
+      2.87129E-09  to  2.96040E-09 mev   
+      2.96040E-09  to  3.04950E-09 mev   
+      3.04950E-09  to  3.13861E-09 mev   
+      3.13861E-09  to  3.22772E-09 mev   
+      3.22772E-09  to  3.31683E-09 mev   
+      3.31683E-09  to  3.40594E-09 mev   
+      3.40594E-09  to  3.49505E-09 mev   
+      3.49505E-09  to  3.58416E-09 mev   
+      3.58416E-09  to  3.67327E-09 mev   
+      3.67327E-09  to  3.76238E-09 mev   
+      3.76238E-09  to  3.85149E-09 mev   
+      3.85149E-09  to  3.94059E-09 mev   
+      3.94059E-09  to  4.02970E-09 mev   
+      4.02970E-09  to  4.11881E-09 mev   
+      4.11881E-09  to  4.20792E-09 mev   
+      4.20792E-09  to  4.29703E-09 mev   
+      4.29703E-09  to  4.38614E-09 mev   
+      4.38614E-09  to  4.47525E-09 mev   
+      4.47525E-09  to  4.56436E-09 mev   
+      4.56436E-09  to  4.65347E-09 mev   
+      4.65347E-09  to  4.74257E-09 mev   
+      4.74257E-09  to  4.83168E-09 mev   
+      4.83168E-09  to  4.92079E-09 mev   
+      4.92079E-09  to  5.00990E-09 mev   
+      5.00990E-09  to  5.09901E-09 mev   
+      5.09901E-09  to  5.18812E-09 mev   
+      5.18812E-09  to  5.27723E-09 mev   
+      5.27723E-09  to  5.36634E-09 mev   
+      5.36634E-09  to  5.45545E-09 mev   
+      5.45545E-09  to  5.54455E-09 mev   
+      5.54455E-09  to  5.63366E-09 mev   
+      5.63366E-09  to  5.72277E-09 mev   
+      5.72277E-09  to  5.81188E-09 mev   
+      5.81188E-09  to  5.90099E-09 mev   
+      5.90099E-09  to  5.99010E-09 mev   
+      5.99010E-09  to  6.07921E-09 mev   
+      6.07921E-09  to  6.16832E-09 mev   
+      6.16832E-09  to  6.25743E-09 mev   
+      6.25743E-09  to  6.34653E-09 mev   
+      6.34653E-09  to  6.43564E-09 mev   
+      6.43564E-09  to  6.52475E-09 mev   
+      6.52475E-09  to  6.61386E-09 mev   
+      6.61386E-09  to  6.70297E-09 mev   
+      6.70297E-09  to  6.79208E-09 mev   
+      6.79208E-09  to  6.88119E-09 mev   
+      6.88119E-09  to  6.97030E-09 mev   
+      6.97030E-09  to  7.05941E-09 mev   
+      7.05941E-09  to  7.14851E-09 mev   
+      7.14851E-09  to  7.23762E-09 mev   
+      7.23762E-09  to  7.32673E-09 mev   
+      7.32673E-09  to  7.41584E-09 mev   
+      7.41584E-09  to  7.50495E-09 mev   
+      7.50495E-09  to  7.59406E-09 mev   
+      7.59406E-09  to  7.68317E-09 mev   
+      7.68317E-09  to  7.77228E-09 mev   
+      7.77228E-09  to  7.86139E-09 mev   
+      7.86139E-09  to  7.95050E-09 mev   
+      7.95050E-09  to  8.03960E-09 mev   
+      8.03960E-09  to  8.12871E-09 mev   
+      8.12871E-09  to  8.21782E-09 mev   
+      8.21782E-09  to  8.30693E-09 mev   
+      8.30693E-09  to  8.39604E-09 mev   
+      8.39604E-09  to  8.48515E-09 mev   
+      8.48515E-09  to  8.57426E-09 mev   
+      8.57426E-09  to  8.66337E-09 mev   
+      8.66337E-09  to  8.75248E-09 mev   
+      8.75248E-09  to  8.84158E-09 mev   
+      8.84158E-09  to  8.93069E-09 mev   
+      8.93069E-09  to  9.01980E-09 mev   
+      9.01980E-09  to  9.10891E-09 mev   
+      9.10891E-09  to  9.19802E-09 mev   
+      9.19802E-09  to  9.28713E-09 mev   
+      9.28713E-09  to  9.37624E-09 mev   
+      9.37624E-09  to  9.46535E-09 mev   
+      9.46535E-09  to  9.55446E-09 mev   
+      9.55446E-09  to  9.64356E-09 mev   
+      9.64356E-09  to  9.73267E-09 mev   
+      9.73267E-09  to  9.82178E-09 mev   
+      9.82178E-09  to  9.91089E-09 mev   
+      9.91089E-09  to  1.00000E-08 mev   
+      total bin
+
+1tally       34                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-08 mev   
+      1.00000E-08  to  1.08911E-08 mev   
+      1.08911E-08  to  1.17822E-08 mev   
+      1.17822E-08  to  1.26733E-08 mev   
+      1.26733E-08  to  1.35644E-08 mev   
+      1.35644E-08  to  1.44554E-08 mev   
+      1.44554E-08  to  1.53465E-08 mev   
+      1.53465E-08  to  1.62376E-08 mev   
+      1.62376E-08  to  1.71287E-08 mev   
+      1.71287E-08  to  1.80198E-08 mev   
+      1.80198E-08  to  1.89109E-08 mev   
+      1.89109E-08  to  1.98020E-08 mev   
+      1.98020E-08  to  2.06931E-08 mev   
+      2.06931E-08  to  2.15842E-08 mev   
+      2.15842E-08  to  2.24752E-08 mev   
+      2.24752E-08  to  2.33663E-08 mev   
+      2.33663E-08  to  2.42574E-08 mev   
+      2.42574E-08  to  2.51485E-08 mev   
+      2.51485E-08  to  2.60396E-08 mev   
+      2.60396E-08  to  2.69307E-08 mev   
+      2.69307E-08  to  2.78218E-08 mev   
+      2.78218E-08  to  2.87129E-08 mev   
+      2.87129E-08  to  2.96040E-08 mev   
+      2.96040E-08  to  3.04950E-08 mev   
+      3.04950E-08  to  3.13861E-08 mev   
+      3.13861E-08  to  3.22772E-08 mev   
+      3.22772E-08  to  3.31683E-08 mev   
+      3.31683E-08  to  3.40594E-08 mev   
+      3.40594E-08  to  3.49505E-08 mev   
+      3.49505E-08  to  3.58416E-08 mev   
+      3.58416E-08  to  3.67327E-08 mev   
+      3.67327E-08  to  3.76238E-08 mev   
+      3.76238E-08  to  3.85149E-08 mev   
+      3.85149E-08  to  3.94059E-08 mev   
+      3.94059E-08  to  4.02970E-08 mev   
+      4.02970E-08  to  4.11881E-08 mev   
+      4.11881E-08  to  4.20792E-08 mev   
+      4.20792E-08  to  4.29703E-08 mev   
+      4.29703E-08  to  4.38614E-08 mev   
+      4.38614E-08  to  4.47525E-08 mev   
+      4.47525E-08  to  4.56436E-08 mev   
+      4.56436E-08  to  4.65347E-08 mev   
+      4.65347E-08  to  4.74257E-08 mev   
+      4.74257E-08  to  4.83168E-08 mev   
+      4.83168E-08  to  4.92079E-08 mev   
+      4.92079E-08  to  5.00990E-08 mev   
+      5.00990E-08  to  5.09901E-08 mev   
+      5.09901E-08  to  5.18812E-08 mev   
+      5.18812E-08  to  5.27723E-08 mev   
+      5.27723E-08  to  5.36634E-08 mev   
+      5.36634E-08  to  5.45545E-08 mev   
+      5.45545E-08  to  5.54455E-08 mev   
+      5.54455E-08  to  5.63366E-08 mev   
+      5.63366E-08  to  5.72277E-08 mev   
+      5.72277E-08  to  5.81188E-08 mev   
+      5.81188E-08  to  5.90099E-08 mev   
+      5.90099E-08  to  5.99010E-08 mev   
+      5.99010E-08  to  6.07921E-08 mev   
+      6.07921E-08  to  6.16832E-08 mev   
+      6.16832E-08  to  6.25743E-08 mev   
+      6.25743E-08  to  6.34653E-08 mev   
+      6.34653E-08  to  6.43564E-08 mev   
+      6.43564E-08  to  6.52475E-08 mev   
+      6.52475E-08  to  6.61386E-08 mev   
+      6.61386E-08  to  6.70297E-08 mev   
+      6.70297E-08  to  6.79208E-08 mev   
+      6.79208E-08  to  6.88119E-08 mev   
+      6.88119E-08  to  6.97030E-08 mev   
+      6.97030E-08  to  7.05941E-08 mev   
+      7.05941E-08  to  7.14851E-08 mev   
+      7.14851E-08  to  7.23762E-08 mev   
+      7.23762E-08  to  7.32673E-08 mev   
+      7.32673E-08  to  7.41584E-08 mev   
+      7.41584E-08  to  7.50495E-08 mev   
+      7.50495E-08  to  7.59406E-08 mev   
+      7.59406E-08  to  7.68317E-08 mev   
+      7.68317E-08  to  7.77228E-08 mev   
+      7.77228E-08  to  7.86139E-08 mev   
+      7.86139E-08  to  7.95050E-08 mev   
+      7.95050E-08  to  8.03960E-08 mev   
+      8.03960E-08  to  8.12871E-08 mev   
+      8.12871E-08  to  8.21782E-08 mev   
+      8.21782E-08  to  8.30693E-08 mev   
+      8.30693E-08  to  8.39604E-08 mev   
+      8.39604E-08  to  8.48515E-08 mev   
+      8.48515E-08  to  8.57426E-08 mev   
+      8.57426E-08  to  8.66337E-08 mev   
+      8.66337E-08  to  8.75248E-08 mev   
+      8.75248E-08  to  8.84158E-08 mev   
+      8.84158E-08  to  8.93069E-08 mev   
+      8.93069E-08  to  9.01980E-08 mev   
+      9.01980E-08  to  9.10891E-08 mev   
+      9.10891E-08  to  9.19802E-08 mev   
+      9.19802E-08  to  9.28713E-08 mev   
+      9.28713E-08  to  9.37624E-08 mev   
+      9.37624E-08  to  9.46535E-08 mev   
+      9.46535E-08  to  9.55446E-08 mev   
+      9.55446E-08  to  9.64356E-08 mev   
+      9.64356E-08  to  9.73267E-08 mev   
+      9.73267E-08  to  9.82178E-08 mev   
+      9.82178E-08  to  9.91089E-08 mev   
+      9.91089E-08  to  1.00000E-07 mev   
+      total bin
+
+1tally       44                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-07 mev   
+      1.00000E-07  to  1.08911E-07 mev   
+      1.08911E-07  to  1.17822E-07 mev   
+      1.17822E-07  to  1.26733E-07 mev   
+      1.26733E-07  to  1.35644E-07 mev   
+      1.35644E-07  to  1.44554E-07 mev   
+      1.44554E-07  to  1.53465E-07 mev   
+      1.53465E-07  to  1.62376E-07 mev   
+      1.62376E-07  to  1.71287E-07 mev   
+      1.71287E-07  to  1.80198E-07 mev   
+      1.80198E-07  to  1.89109E-07 mev   
+      1.89109E-07  to  1.98020E-07 mev   
+      1.98020E-07  to  2.06931E-07 mev   
+      2.06931E-07  to  2.15842E-07 mev   
+      2.15842E-07  to  2.24752E-07 mev   
+      2.24752E-07  to  2.33663E-07 mev   
+      2.33663E-07  to  2.42574E-07 mev   
+      2.42574E-07  to  2.51485E-07 mev   
+      2.51485E-07  to  2.60396E-07 mev   
+      2.60396E-07  to  2.69307E-07 mev   
+      2.69307E-07  to  2.78218E-07 mev   
+      2.78218E-07  to  2.87129E-07 mev   
+      2.87129E-07  to  2.96040E-07 mev   
+      2.96040E-07  to  3.04950E-07 mev   
+      3.04950E-07  to  3.13861E-07 mev   
+      3.13861E-07  to  3.22772E-07 mev   
+      3.22772E-07  to  3.31683E-07 mev   
+      3.31683E-07  to  3.40594E-07 mev   
+      3.40594E-07  to  3.49505E-07 mev   
+      3.49505E-07  to  3.58416E-07 mev   
+      3.58416E-07  to  3.67327E-07 mev   
+      3.67327E-07  to  3.76238E-07 mev   
+      3.76238E-07  to  3.85149E-07 mev   
+      3.85149E-07  to  3.94059E-07 mev   
+      3.94059E-07  to  4.02970E-07 mev   
+      4.02970E-07  to  4.11881E-07 mev   
+      4.11881E-07  to  4.20792E-07 mev   
+      4.20792E-07  to  4.29703E-07 mev   
+      4.29703E-07  to  4.38614E-07 mev   
+      4.38614E-07  to  4.47525E-07 mev   
+      4.47525E-07  to  4.56436E-07 mev   
+      4.56436E-07  to  4.65347E-07 mev   
+      4.65347E-07  to  4.74257E-07 mev   
+      4.74257E-07  to  4.83168E-07 mev   
+      4.83168E-07  to  4.92079E-07 mev   
+      4.92079E-07  to  5.00990E-07 mev   
+      5.00990E-07  to  5.09901E-07 mev   
+      5.09901E-07  to  5.18812E-07 mev   
+      5.18812E-07  to  5.27723E-07 mev   
+      5.27723E-07  to  5.36634E-07 mev   
+      5.36634E-07  to  5.45545E-07 mev   
+      5.45545E-07  to  5.54455E-07 mev   
+      5.54455E-07  to  5.63366E-07 mev   
+      5.63366E-07  to  5.72277E-07 mev   
+      5.72277E-07  to  5.81188E-07 mev   
+      5.81188E-07  to  5.90099E-07 mev   
+      5.90099E-07  to  5.99010E-07 mev   
+      5.99010E-07  to  6.07921E-07 mev   
+      6.07921E-07  to  6.16832E-07 mev   
+      6.16832E-07  to  6.25743E-07 mev   
+      6.25743E-07  to  6.34653E-07 mev   
+      6.34653E-07  to  6.43564E-07 mev   
+      6.43564E-07  to  6.52475E-07 mev   
+      6.52475E-07  to  6.61386E-07 mev   
+      6.61386E-07  to  6.70297E-07 mev   
+      6.70297E-07  to  6.79208E-07 mev   
+      6.79208E-07  to  6.88119E-07 mev   
+      6.88119E-07  to  6.97030E-07 mev   
+      6.97030E-07  to  7.05941E-07 mev   
+      7.05941E-07  to  7.14851E-07 mev   
+      7.14851E-07  to  7.23762E-07 mev   
+      7.23762E-07  to  7.32673E-07 mev   
+      7.32673E-07  to  7.41584E-07 mev   
+      7.41584E-07  to  7.50495E-07 mev   
+      7.50495E-07  to  7.59406E-07 mev   
+      7.59406E-07  to  7.68317E-07 mev   
+      7.68317E-07  to  7.77228E-07 mev   
+      7.77228E-07  to  7.86139E-07 mev   
+      7.86139E-07  to  7.95050E-07 mev   
+      7.95050E-07  to  8.03960E-07 mev   
+      8.03960E-07  to  8.12871E-07 mev   
+      8.12871E-07  to  8.21782E-07 mev   
+      8.21782E-07  to  8.30693E-07 mev   
+      8.30693E-07  to  8.39604E-07 mev   
+      8.39604E-07  to  8.48515E-07 mev   
+      8.48515E-07  to  8.57426E-07 mev   
+      8.57426E-07  to  8.66337E-07 mev   
+      8.66337E-07  to  8.75248E-07 mev   
+      8.75248E-07  to  8.84158E-07 mev   
+      8.84158E-07  to  8.93069E-07 mev   
+      8.93069E-07  to  9.01980E-07 mev   
+      9.01980E-07  to  9.10891E-07 mev   
+      9.10891E-07  to  9.19802E-07 mev   
+      9.19802E-07  to  9.28713E-07 mev   
+      9.28713E-07  to  9.37624E-07 mev   
+      9.37624E-07  to  9.46535E-07 mev   
+      9.46535E-07  to  9.55446E-07 mev   
+      9.55446E-07  to  9.64356E-07 mev   
+      9.64356E-07  to  9.73267E-07 mev   
+      9.73267E-07  to  9.82178E-07 mev   
+      9.82178E-07  to  9.91089E-07 mev   
+      9.91089E-07  to  1.00000E-06 mev   
+      total bin
+
+1tally       54                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-06 mev   
+      1.00000E-06  to  1.08911E-06 mev   
+      1.08911E-06  to  1.17822E-06 mev   
+      1.17822E-06  to  1.26733E-06 mev   
+      1.26733E-06  to  1.35644E-06 mev   
+      1.35644E-06  to  1.44554E-06 mev   
+      1.44554E-06  to  1.53465E-06 mev   
+      1.53465E-06  to  1.62376E-06 mev   
+      1.62376E-06  to  1.71287E-06 mev   
+      1.71287E-06  to  1.80198E-06 mev   
+      1.80198E-06  to  1.89109E-06 mev   
+      1.89109E-06  to  1.98020E-06 mev   
+      1.98020E-06  to  2.06931E-06 mev   
+      2.06931E-06  to  2.15842E-06 mev   
+      2.15842E-06  to  2.24752E-06 mev   
+      2.24752E-06  to  2.33663E-06 mev   
+      2.33663E-06  to  2.42574E-06 mev   
+      2.42574E-06  to  2.51485E-06 mev   
+      2.51485E-06  to  2.60396E-06 mev   
+      2.60396E-06  to  2.69307E-06 mev   
+      2.69307E-06  to  2.78218E-06 mev   
+      2.78218E-06  to  2.87129E-06 mev   
+      2.87129E-06  to  2.96040E-06 mev   
+      2.96040E-06  to  3.04950E-06 mev   
+      3.04950E-06  to  3.13861E-06 mev   
+      3.13861E-06  to  3.22772E-06 mev   
+      3.22772E-06  to  3.31683E-06 mev   
+      3.31683E-06  to  3.40594E-06 mev   
+      3.40594E-06  to  3.49505E-06 mev   
+      3.49505E-06  to  3.58416E-06 mev   
+      3.58416E-06  to  3.67327E-06 mev   
+      3.67327E-06  to  3.76238E-06 mev   
+      3.76238E-06  to  3.85149E-06 mev   
+      3.85149E-06  to  3.94059E-06 mev   
+      3.94059E-06  to  4.02970E-06 mev   
+      4.02970E-06  to  4.11881E-06 mev   
+      4.11881E-06  to  4.20792E-06 mev   
+      4.20792E-06  to  4.29703E-06 mev   
+      4.29703E-06  to  4.38614E-06 mev   
+      4.38614E-06  to  4.47525E-06 mev   
+      4.47525E-06  to  4.56436E-06 mev   
+      4.56436E-06  to  4.65347E-06 mev   
+      4.65347E-06  to  4.74257E-06 mev   
+      4.74257E-06  to  4.83168E-06 mev   
+      4.83168E-06  to  4.92079E-06 mev   
+      4.92079E-06  to  5.00990E-06 mev   
+      5.00990E-06  to  5.09901E-06 mev   
+      5.09901E-06  to  5.18812E-06 mev   
+      5.18812E-06  to  5.27723E-06 mev   
+      5.27723E-06  to  5.36634E-06 mev   
+      5.36634E-06  to  5.45545E-06 mev   
+      5.45545E-06  to  5.54455E-06 mev   
+      5.54455E-06  to  5.63366E-06 mev   
+      5.63366E-06  to  5.72277E-06 mev   
+      5.72277E-06  to  5.81188E-06 mev   
+      5.81188E-06  to  5.90099E-06 mev   
+      5.90099E-06  to  5.99010E-06 mev   
+      5.99010E-06  to  6.07921E-06 mev   
+      6.07921E-06  to  6.16832E-06 mev   
+      6.16832E-06  to  6.25743E-06 mev   
+      6.25743E-06  to  6.34653E-06 mev   
+      6.34653E-06  to  6.43564E-06 mev   
+      6.43564E-06  to  6.52475E-06 mev   
+      6.52475E-06  to  6.61386E-06 mev   
+      6.61386E-06  to  6.70297E-06 mev   
+      6.70297E-06  to  6.79208E-06 mev   
+      6.79208E-06  to  6.88119E-06 mev   
+      6.88119E-06  to  6.97030E-06 mev   
+      6.97030E-06  to  7.05941E-06 mev   
+      7.05941E-06  to  7.14851E-06 mev   
+      7.14851E-06  to  7.23762E-06 mev   
+      7.23762E-06  to  7.32673E-06 mev   
+      7.32673E-06  to  7.41584E-06 mev   
+      7.41584E-06  to  7.50495E-06 mev   
+      7.50495E-06  to  7.59406E-06 mev   
+      7.59406E-06  to  7.68317E-06 mev   
+      7.68317E-06  to  7.77228E-06 mev   
+      7.77228E-06  to  7.86139E-06 mev   
+      7.86139E-06  to  7.95050E-06 mev   
+      7.95050E-06  to  8.03960E-06 mev   
+      8.03960E-06  to  8.12871E-06 mev   
+      8.12871E-06  to  8.21782E-06 mev   
+      8.21782E-06  to  8.30693E-06 mev   
+      8.30693E-06  to  8.39604E-06 mev   
+      8.39604E-06  to  8.48515E-06 mev   
+      8.48515E-06  to  8.57426E-06 mev   
+      8.57426E-06  to  8.66337E-06 mev   
+      8.66337E-06  to  8.75248E-06 mev   
+      8.75248E-06  to  8.84158E-06 mev   
+      8.84158E-06  to  8.93069E-06 mev   
+      8.93069E-06  to  9.01980E-06 mev   
+      9.01980E-06  to  9.10891E-06 mev   
+      9.10891E-06  to  9.19802E-06 mev   
+      9.19802E-06  to  9.28713E-06 mev   
+      9.28713E-06  to  9.37624E-06 mev   
+      9.37624E-06  to  9.46535E-06 mev   
+      9.46535E-06  to  9.55446E-06 mev   
+      9.55446E-06  to  9.64356E-06 mev   
+      9.64356E-06  to  9.73267E-06 mev   
+      9.73267E-06  to  9.82178E-06 mev   
+      9.82178E-06  to  9.91089E-06 mev   
+      9.91089E-06  to  1.00000E-05 mev   
+      total bin
+
+1tally       64                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-05 mev   
+      1.00000E-05  to  1.08911E-05 mev   
+      1.08911E-05  to  1.17822E-05 mev   
+      1.17822E-05  to  1.26733E-05 mev   
+      1.26733E-05  to  1.35644E-05 mev   
+      1.35644E-05  to  1.44554E-05 mev   
+      1.44554E-05  to  1.53465E-05 mev   
+      1.53465E-05  to  1.62376E-05 mev   
+      1.62376E-05  to  1.71287E-05 mev   
+      1.71287E-05  to  1.80198E-05 mev   
+      1.80198E-05  to  1.89109E-05 mev   
+      1.89109E-05  to  1.98020E-05 mev   
+      1.98020E-05  to  2.06931E-05 mev   
+      2.06931E-05  to  2.15842E-05 mev   
+      2.15842E-05  to  2.24752E-05 mev   
+      2.24752E-05  to  2.33663E-05 mev   
+      2.33663E-05  to  2.42574E-05 mev   
+      2.42574E-05  to  2.51485E-05 mev   
+      2.51485E-05  to  2.60396E-05 mev   
+      2.60396E-05  to  2.69307E-05 mev   
+      2.69307E-05  to  2.78218E-05 mev   
+      2.78218E-05  to  2.87129E-05 mev   
+      2.87129E-05  to  2.96040E-05 mev   
+      2.96040E-05  to  3.04950E-05 mev   
+      3.04950E-05  to  3.13861E-05 mev   
+      3.13861E-05  to  3.22772E-05 mev   
+      3.22772E-05  to  3.31683E-05 mev   
+      3.31683E-05  to  3.40594E-05 mev   
+      3.40594E-05  to  3.49505E-05 mev   
+      3.49505E-05  to  3.58416E-05 mev   
+      3.58416E-05  to  3.67327E-05 mev   
+      3.67327E-05  to  3.76238E-05 mev   
+      3.76238E-05  to  3.85149E-05 mev   
+      3.85149E-05  to  3.94059E-05 mev   
+      3.94059E-05  to  4.02970E-05 mev   
+      4.02970E-05  to  4.11881E-05 mev   
+      4.11881E-05  to  4.20792E-05 mev   
+      4.20792E-05  to  4.29703E-05 mev   
+      4.29703E-05  to  4.38614E-05 mev   
+      4.38614E-05  to  4.47525E-05 mev   
+      4.47525E-05  to  4.56436E-05 mev   
+      4.56436E-05  to  4.65347E-05 mev   
+      4.65347E-05  to  4.74257E-05 mev   
+      4.74257E-05  to  4.83168E-05 mev   
+      4.83168E-05  to  4.92079E-05 mev   
+      4.92079E-05  to  5.00990E-05 mev   
+      5.00990E-05  to  5.09901E-05 mev   
+      5.09901E-05  to  5.18812E-05 mev   
+      5.18812E-05  to  5.27723E-05 mev   
+      5.27723E-05  to  5.36634E-05 mev   
+      5.36634E-05  to  5.45545E-05 mev   
+      5.45545E-05  to  5.54455E-05 mev   
+      5.54455E-05  to  5.63366E-05 mev   
+      5.63366E-05  to  5.72277E-05 mev   
+      5.72277E-05  to  5.81188E-05 mev   
+      5.81188E-05  to  5.90099E-05 mev   
+      5.90099E-05  to  5.99010E-05 mev   
+      5.99010E-05  to  6.07921E-05 mev   
+      6.07921E-05  to  6.16832E-05 mev   
+      6.16832E-05  to  6.25743E-05 mev   
+      6.25743E-05  to  6.34653E-05 mev   
+      6.34653E-05  to  6.43564E-05 mev   
+      6.43564E-05  to  6.52475E-05 mev   
+      6.52475E-05  to  6.61386E-05 mev   
+      6.61386E-05  to  6.70297E-05 mev   
+      6.70297E-05  to  6.79208E-05 mev   
+      6.79208E-05  to  6.88119E-05 mev   
+      6.88119E-05  to  6.97030E-05 mev   
+      6.97030E-05  to  7.05941E-05 mev   
+      7.05941E-05  to  7.14851E-05 mev   
+      7.14851E-05  to  7.23762E-05 mev   
+      7.23762E-05  to  7.32673E-05 mev   
+      7.32673E-05  to  7.41584E-05 mev   
+      7.41584E-05  to  7.50495E-05 mev   
+      7.50495E-05  to  7.59406E-05 mev   
+      7.59406E-05  to  7.68317E-05 mev   
+      7.68317E-05  to  7.77228E-05 mev   
+      7.77228E-05  to  7.86139E-05 mev   
+      7.86139E-05  to  7.95050E-05 mev   
+      7.95050E-05  to  8.03960E-05 mev   
+      8.03960E-05  to  8.12871E-05 mev   
+      8.12871E-05  to  8.21782E-05 mev   
+      8.21782E-05  to  8.30693E-05 mev   
+      8.30693E-05  to  8.39604E-05 mev   
+      8.39604E-05  to  8.48515E-05 mev   
+      8.48515E-05  to  8.57426E-05 mev   
+      8.57426E-05  to  8.66337E-05 mev   
+      8.66337E-05  to  8.75248E-05 mev   
+      8.75248E-05  to  8.84158E-05 mev   
+      8.84158E-05  to  8.93069E-05 mev   
+      8.93069E-05  to  9.01980E-05 mev   
+      9.01980E-05  to  9.10891E-05 mev   
+      9.10891E-05  to  9.19802E-05 mev   
+      9.19802E-05  to  9.28713E-05 mev   
+      9.28713E-05  to  9.37624E-05 mev   
+      9.37624E-05  to  9.46535E-05 mev   
+      9.46535E-05  to  9.55446E-05 mev   
+      9.55446E-05  to  9.64356E-05 mev   
+      9.64356E-05  to  9.73267E-05 mev   
+      9.73267E-05  to  9.82178E-05 mev   
+      9.82178E-05  to  9.91089E-05 mev   
+      9.91089E-05  to  1.00000E-04 mev   
+      total bin
+
+1tally       74                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-04 mev   
+      1.00000E-04  to  1.08911E-04 mev   
+      1.08911E-04  to  1.17822E-04 mev   
+      1.17822E-04  to  1.26733E-04 mev   
+      1.26733E-04  to  1.35644E-04 mev   
+      1.35644E-04  to  1.44554E-04 mev   
+      1.44554E-04  to  1.53465E-04 mev   
+      1.53465E-04  to  1.62376E-04 mev   
+      1.62376E-04  to  1.71287E-04 mev   
+      1.71287E-04  to  1.80198E-04 mev   
+      1.80198E-04  to  1.89109E-04 mev   
+      1.89109E-04  to  1.98020E-04 mev   
+      1.98020E-04  to  2.06931E-04 mev   
+      2.06931E-04  to  2.15842E-04 mev   
+      2.15842E-04  to  2.24752E-04 mev   
+      2.24752E-04  to  2.33663E-04 mev   
+      2.33663E-04  to  2.42574E-04 mev   
+      2.42574E-04  to  2.51485E-04 mev   
+      2.51485E-04  to  2.60396E-04 mev   
+      2.60396E-04  to  2.69307E-04 mev   
+      2.69307E-04  to  2.78218E-04 mev   
+      2.78218E-04  to  2.87129E-04 mev   
+      2.87129E-04  to  2.96040E-04 mev   
+      2.96040E-04  to  3.04950E-04 mev   
+      3.04950E-04  to  3.13861E-04 mev   
+      3.13861E-04  to  3.22772E-04 mev   
+      3.22772E-04  to  3.31683E-04 mev   
+      3.31683E-04  to  3.40594E-04 mev   
+      3.40594E-04  to  3.49505E-04 mev   
+      3.49505E-04  to  3.58416E-04 mev   
+      3.58416E-04  to  3.67327E-04 mev   
+      3.67327E-04  to  3.76238E-04 mev   
+      3.76238E-04  to  3.85149E-04 mev   
+      3.85149E-04  to  3.94059E-04 mev   
+      3.94059E-04  to  4.02970E-04 mev   
+      4.02970E-04  to  4.11881E-04 mev   
+      4.11881E-04  to  4.20792E-04 mev   
+      4.20792E-04  to  4.29703E-04 mev   
+      4.29703E-04  to  4.38614E-04 mev   
+      4.38614E-04  to  4.47525E-04 mev   
+      4.47525E-04  to  4.56436E-04 mev   
+      4.56436E-04  to  4.65347E-04 mev   
+      4.65347E-04  to  4.74257E-04 mev   
+      4.74257E-04  to  4.83168E-04 mev   
+      4.83168E-04  to  4.92079E-04 mev   
+      4.92079E-04  to  5.00990E-04 mev   
+      5.00990E-04  to  5.09901E-04 mev   
+      5.09901E-04  to  5.18812E-04 mev   
+      5.18812E-04  to  5.27723E-04 mev   
+      5.27723E-04  to  5.36634E-04 mev   
+      5.36634E-04  to  5.45545E-04 mev   
+      5.45545E-04  to  5.54455E-04 mev   
+      5.54455E-04  to  5.63366E-04 mev   
+      5.63366E-04  to  5.72277E-04 mev   
+      5.72277E-04  to  5.81188E-04 mev   
+      5.81188E-04  to  5.90099E-04 mev   
+      5.90099E-04  to  5.99010E-04 mev   
+      5.99010E-04  to  6.07921E-04 mev   
+      6.07921E-04  to  6.16832E-04 mev   
+      6.16832E-04  to  6.25743E-04 mev   
+      6.25743E-04  to  6.34653E-04 mev   
+      6.34653E-04  to  6.43564E-04 mev   
+      6.43564E-04  to  6.52475E-04 mev   
+      6.52475E-04  to  6.61386E-04 mev   
+      6.61386E-04  to  6.70297E-04 mev   
+      6.70297E-04  to  6.79208E-04 mev   
+      6.79208E-04  to  6.88119E-04 mev   
+      6.88119E-04  to  6.97030E-04 mev   
+      6.97030E-04  to  7.05941E-04 mev   
+      7.05941E-04  to  7.14851E-04 mev   
+      7.14851E-04  to  7.23762E-04 mev   
+      7.23762E-04  to  7.32673E-04 mev   
+      7.32673E-04  to  7.41584E-04 mev   
+      7.41584E-04  to  7.50495E-04 mev   
+      7.50495E-04  to  7.59406E-04 mev   
+      7.59406E-04  to  7.68317E-04 mev   
+      7.68317E-04  to  7.77228E-04 mev   
+      7.77228E-04  to  7.86139E-04 mev   
+      7.86139E-04  to  7.95050E-04 mev   
+      7.95050E-04  to  8.03960E-04 mev   
+      8.03960E-04  to  8.12871E-04 mev   
+      8.12871E-04  to  8.21782E-04 mev   
+      8.21782E-04  to  8.30693E-04 mev   
+      8.30693E-04  to  8.39604E-04 mev   
+      8.39604E-04  to  8.48515E-04 mev   
+      8.48515E-04  to  8.57426E-04 mev   
+      8.57426E-04  to  8.66337E-04 mev   
+      8.66337E-04  to  8.75248E-04 mev   
+      8.75248E-04  to  8.84158E-04 mev   
+      8.84158E-04  to  8.93069E-04 mev   
+      8.93069E-04  to  9.01980E-04 mev   
+      9.01980E-04  to  9.10891E-04 mev   
+      9.10891E-04  to  9.19802E-04 mev   
+      9.19802E-04  to  9.28713E-04 mev   
+      9.28713E-04  to  9.37624E-04 mev   
+      9.37624E-04  to  9.46535E-04 mev   
+      9.46535E-04  to  9.55446E-04 mev   
+      9.55446E-04  to  9.64356E-04 mev   
+      9.64356E-04  to  9.73267E-04 mev   
+      9.73267E-04  to  9.82178E-04 mev   
+      9.82178E-04  to  9.91089E-04 mev   
+      9.91089E-04  to  1.00000E-03 mev   
+      total bin
+
+1tally       84                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-03 mev   
+      1.00000E-03  to  1.08911E-03 mev   
+      1.08911E-03  to  1.17822E-03 mev   
+      1.17822E-03  to  1.26733E-03 mev   
+      1.26733E-03  to  1.35644E-03 mev   
+      1.35644E-03  to  1.44554E-03 mev   
+      1.44554E-03  to  1.53465E-03 mev   
+      1.53465E-03  to  1.62376E-03 mev   
+      1.62376E-03  to  1.71287E-03 mev   
+      1.71287E-03  to  1.80198E-03 mev   
+      1.80198E-03  to  1.89109E-03 mev   
+      1.89109E-03  to  1.98020E-03 mev   
+      1.98020E-03  to  2.06931E-03 mev   
+      2.06931E-03  to  2.15842E-03 mev   
+      2.15842E-03  to  2.24752E-03 mev   
+      2.24752E-03  to  2.33663E-03 mev   
+      2.33663E-03  to  2.42574E-03 mev   
+      2.42574E-03  to  2.51485E-03 mev   
+      2.51485E-03  to  2.60396E-03 mev   
+      2.60396E-03  to  2.69307E-03 mev   
+      2.69307E-03  to  2.78218E-03 mev   
+      2.78218E-03  to  2.87129E-03 mev   
+      2.87129E-03  to  2.96040E-03 mev   
+      2.96040E-03  to  3.04950E-03 mev   
+      3.04950E-03  to  3.13861E-03 mev   
+      3.13861E-03  to  3.22772E-03 mev   
+      3.22772E-03  to  3.31683E-03 mev   
+      3.31683E-03  to  3.40594E-03 mev   
+      3.40594E-03  to  3.49505E-03 mev   
+      3.49505E-03  to  3.58416E-03 mev   
+      3.58416E-03  to  3.67327E-03 mev   
+      3.67327E-03  to  3.76238E-03 mev   
+      3.76238E-03  to  3.85149E-03 mev   
+      3.85149E-03  to  3.94059E-03 mev   
+      3.94059E-03  to  4.02970E-03 mev   
+      4.02970E-03  to  4.11881E-03 mev   
+      4.11881E-03  to  4.20792E-03 mev   
+      4.20792E-03  to  4.29703E-03 mev   
+      4.29703E-03  to  4.38614E-03 mev   
+      4.38614E-03  to  4.47525E-03 mev   
+      4.47525E-03  to  4.56436E-03 mev   
+      4.56436E-03  to  4.65347E-03 mev   
+      4.65347E-03  to  4.74257E-03 mev   
+      4.74257E-03  to  4.83168E-03 mev   
+      4.83168E-03  to  4.92079E-03 mev   
+      4.92079E-03  to  5.00990E-03 mev   
+      5.00990E-03  to  5.09901E-03 mev   
+      5.09901E-03  to  5.18812E-03 mev   
+      5.18812E-03  to  5.27723E-03 mev   
+      5.27723E-03  to  5.36634E-03 mev   
+      5.36634E-03  to  5.45545E-03 mev   
+      5.45545E-03  to  5.54455E-03 mev   
+      5.54455E-03  to  5.63366E-03 mev   
+      5.63366E-03  to  5.72277E-03 mev   
+      5.72277E-03  to  5.81188E-03 mev   
+      5.81188E-03  to  5.90099E-03 mev   
+      5.90099E-03  to  5.99010E-03 mev   
+      5.99010E-03  to  6.07921E-03 mev   
+      6.07921E-03  to  6.16832E-03 mev   
+      6.16832E-03  to  6.25743E-03 mev   
+      6.25743E-03  to  6.34653E-03 mev   
+      6.34653E-03  to  6.43564E-03 mev   
+      6.43564E-03  to  6.52475E-03 mev   
+      6.52475E-03  to  6.61386E-03 mev   
+      6.61386E-03  to  6.70297E-03 mev   
+      6.70297E-03  to  6.79208E-03 mev   
+      6.79208E-03  to  6.88119E-03 mev   
+      6.88119E-03  to  6.97030E-03 mev   
+      6.97030E-03  to  7.05941E-03 mev   
+      7.05941E-03  to  7.14851E-03 mev   
+      7.14851E-03  to  7.23762E-03 mev   
+      7.23762E-03  to  7.32673E-03 mev   
+      7.32673E-03  to  7.41584E-03 mev   
+      7.41584E-03  to  7.50495E-03 mev   
+      7.50495E-03  to  7.59406E-03 mev   
+      7.59406E-03  to  7.68317E-03 mev   
+      7.68317E-03  to  7.77228E-03 mev   
+      7.77228E-03  to  7.86139E-03 mev   
+      7.86139E-03  to  7.95050E-03 mev   
+      7.95050E-03  to  8.03960E-03 mev   
+      8.03960E-03  to  8.12871E-03 mev   
+      8.12871E-03  to  8.21782E-03 mev   
+      8.21782E-03  to  8.30693E-03 mev   
+      8.30693E-03  to  8.39604E-03 mev   
+      8.39604E-03  to  8.48515E-03 mev   
+      8.48515E-03  to  8.57426E-03 mev   
+      8.57426E-03  to  8.66337E-03 mev   
+      8.66337E-03  to  8.75248E-03 mev   
+      8.75248E-03  to  8.84158E-03 mev   
+      8.84158E-03  to  8.93069E-03 mev   
+      8.93069E-03  to  9.01980E-03 mev   
+      9.01980E-03  to  9.10891E-03 mev   
+      9.10891E-03  to  9.19802E-03 mev   
+      9.19802E-03  to  9.28713E-03 mev   
+      9.28713E-03  to  9.37624E-03 mev   
+      9.37624E-03  to  9.46535E-03 mev   
+      9.46535E-03  to  9.55446E-03 mev   
+      9.55446E-03  to  9.64356E-03 mev   
+      9.64356E-03  to  9.73267E-03 mev   
+      9.73267E-03  to  9.82178E-03 mev   
+      9.82178E-03  to  9.91089E-03 mev   
+      9.91089E-03  to  1.00000E-02 mev   
+      total bin
+
+1tally       94                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-02 mev   
+      1.00000E-02  to  1.08911E-02 mev   
+      1.08911E-02  to  1.17822E-02 mev   
+      1.17822E-02  to  1.26733E-02 mev   
+      1.26733E-02  to  1.35644E-02 mev   
+      1.35644E-02  to  1.44554E-02 mev   
+      1.44554E-02  to  1.53465E-02 mev   
+      1.53465E-02  to  1.62376E-02 mev   
+      1.62376E-02  to  1.71287E-02 mev   
+      1.71287E-02  to  1.80198E-02 mev   
+      1.80198E-02  to  1.89109E-02 mev   
+      1.89109E-02  to  1.98020E-02 mev   
+      1.98020E-02  to  2.06931E-02 mev   
+      2.06931E-02  to  2.15842E-02 mev   
+      2.15842E-02  to  2.24752E-02 mev   
+      2.24752E-02  to  2.33663E-02 mev   
+      2.33663E-02  to  2.42574E-02 mev   
+      2.42574E-02  to  2.51485E-02 mev   
+      2.51485E-02  to  2.60396E-02 mev   
+      2.60396E-02  to  2.69307E-02 mev   
+      2.69307E-02  to  2.78218E-02 mev   
+      2.78218E-02  to  2.87129E-02 mev   
+      2.87129E-02  to  2.96040E-02 mev   
+      2.96040E-02  to  3.04950E-02 mev   
+      3.04950E-02  to  3.13861E-02 mev   
+      3.13861E-02  to  3.22772E-02 mev   
+      3.22772E-02  to  3.31683E-02 mev   
+      3.31683E-02  to  3.40594E-02 mev   
+      3.40594E-02  to  3.49505E-02 mev   
+      3.49505E-02  to  3.58416E-02 mev   
+      3.58416E-02  to  3.67327E-02 mev   
+      3.67327E-02  to  3.76238E-02 mev   
+      3.76238E-02  to  3.85149E-02 mev   
+      3.85149E-02  to  3.94059E-02 mev   
+      3.94059E-02  to  4.02970E-02 mev   
+      4.02970E-02  to  4.11881E-02 mev   
+      4.11881E-02  to  4.20792E-02 mev   
+      4.20792E-02  to  4.29703E-02 mev   
+      4.29703E-02  to  4.38614E-02 mev   
+      4.38614E-02  to  4.47525E-02 mev   
+      4.47525E-02  to  4.56436E-02 mev   
+      4.56436E-02  to  4.65347E-02 mev   
+      4.65347E-02  to  4.74257E-02 mev   
+      4.74257E-02  to  4.83168E-02 mev   
+      4.83168E-02  to  4.92079E-02 mev   
+      4.92079E-02  to  5.00990E-02 mev   
+      5.00990E-02  to  5.09901E-02 mev   
+      5.09901E-02  to  5.18812E-02 mev   
+      5.18812E-02  to  5.27723E-02 mev   
+      5.27723E-02  to  5.36634E-02 mev   
+      5.36634E-02  to  5.45545E-02 mev   
+      5.45545E-02  to  5.54455E-02 mev   
+      5.54455E-02  to  5.63366E-02 mev   
+      5.63366E-02  to  5.72277E-02 mev   
+      5.72277E-02  to  5.81188E-02 mev   
+      5.81188E-02  to  5.90099E-02 mev   
+      5.90099E-02  to  5.99010E-02 mev   
+      5.99010E-02  to  6.07921E-02 mev   
+      6.07921E-02  to  6.16832E-02 mev   
+      6.16832E-02  to  6.25743E-02 mev   
+      6.25743E-02  to  6.34653E-02 mev   
+      6.34653E-02  to  6.43564E-02 mev   
+      6.43564E-02  to  6.52475E-02 mev   
+      6.52475E-02  to  6.61386E-02 mev   
+      6.61386E-02  to  6.70297E-02 mev   
+      6.70297E-02  to  6.79208E-02 mev   
+      6.79208E-02  to  6.88119E-02 mev   
+      6.88119E-02  to  6.97030E-02 mev   
+      6.97030E-02  to  7.05941E-02 mev   
+      7.05941E-02  to  7.14851E-02 mev   
+      7.14851E-02  to  7.23762E-02 mev   
+      7.23762E-02  to  7.32673E-02 mev   
+      7.32673E-02  to  7.41584E-02 mev   
+      7.41584E-02  to  7.50495E-02 mev   
+      7.50495E-02  to  7.59406E-02 mev   
+      7.59406E-02  to  7.68317E-02 mev   
+      7.68317E-02  to  7.77228E-02 mev   
+      7.77228E-02  to  7.86139E-02 mev   
+      7.86139E-02  to  7.95050E-02 mev   
+      7.95050E-02  to  8.03960E-02 mev   
+      8.03960E-02  to  8.12871E-02 mev   
+      8.12871E-02  to  8.21782E-02 mev   
+      8.21782E-02  to  8.30693E-02 mev   
+      8.30693E-02  to  8.39604E-02 mev   
+      8.39604E-02  to  8.48515E-02 mev   
+      8.48515E-02  to  8.57426E-02 mev   
+      8.57426E-02  to  8.66337E-02 mev   
+      8.66337E-02  to  8.75248E-02 mev   
+      8.75248E-02  to  8.84158E-02 mev   
+      8.84158E-02  to  8.93069E-02 mev   
+      8.93069E-02  to  9.01980E-02 mev   
+      9.01980E-02  to  9.10891E-02 mev   
+      9.10891E-02  to  9.19802E-02 mev   
+      9.19802E-02  to  9.28713E-02 mev   
+      9.28713E-02  to  9.37624E-02 mev   
+      9.37624E-02  to  9.46535E-02 mev   
+      9.46535E-02  to  9.55446E-02 mev   
+      9.55446E-02  to  9.64356E-02 mev   
+      9.64356E-02  to  9.73267E-02 mev   
+      9.73267E-02  to  9.82178E-02 mev   
+      9.82178E-02  to  9.91089E-02 mev   
+      9.91089E-02  to  1.00000E-01 mev   
+      total bin
+
+1tally      104                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E-01 mev   
+      1.00000E-01  to  1.08911E-01 mev   
+      1.08911E-01  to  1.17822E-01 mev   
+      1.17822E-01  to  1.26733E-01 mev   
+      1.26733E-01  to  1.35644E-01 mev   
+      1.35644E-01  to  1.44554E-01 mev   
+      1.44554E-01  to  1.53465E-01 mev   
+      1.53465E-01  to  1.62376E-01 mev   
+      1.62376E-01  to  1.71287E-01 mev   
+      1.71287E-01  to  1.80198E-01 mev   
+      1.80198E-01  to  1.89109E-01 mev   
+      1.89109E-01  to  1.98020E-01 mev   
+      1.98020E-01  to  2.06931E-01 mev   
+      2.06931E-01  to  2.15842E-01 mev   
+      2.15842E-01  to  2.24752E-01 mev   
+      2.24752E-01  to  2.33663E-01 mev   
+      2.33663E-01  to  2.42574E-01 mev   
+      2.42574E-01  to  2.51485E-01 mev   
+      2.51485E-01  to  2.60396E-01 mev   
+      2.60396E-01  to  2.69307E-01 mev   
+      2.69307E-01  to  2.78218E-01 mev   
+      2.78218E-01  to  2.87129E-01 mev   
+      2.87129E-01  to  2.96040E-01 mev   
+      2.96040E-01  to  3.04950E-01 mev   
+      3.04950E-01  to  3.13861E-01 mev   
+      3.13861E-01  to  3.22772E-01 mev   
+      3.22772E-01  to  3.31683E-01 mev   
+      3.31683E-01  to  3.40594E-01 mev   
+      3.40594E-01  to  3.49505E-01 mev   
+      3.49505E-01  to  3.58416E-01 mev   
+      3.58416E-01  to  3.67327E-01 mev   
+      3.67327E-01  to  3.76238E-01 mev   
+      3.76238E-01  to  3.85149E-01 mev   
+      3.85149E-01  to  3.94059E-01 mev   
+      3.94059E-01  to  4.02970E-01 mev   
+      4.02970E-01  to  4.11881E-01 mev   
+      4.11881E-01  to  4.20792E-01 mev   
+      4.20792E-01  to  4.29703E-01 mev   
+      4.29703E-01  to  4.38614E-01 mev   
+      4.38614E-01  to  4.47525E-01 mev   
+      4.47525E-01  to  4.56436E-01 mev   
+      4.56436E-01  to  4.65347E-01 mev   
+      4.65347E-01  to  4.74257E-01 mev   
+      4.74257E-01  to  4.83168E-01 mev   
+      4.83168E-01  to  4.92079E-01 mev   
+      4.92079E-01  to  5.00990E-01 mev   
+      5.00990E-01  to  5.09901E-01 mev   
+      5.09901E-01  to  5.18812E-01 mev   
+      5.18812E-01  to  5.27723E-01 mev   
+      5.27723E-01  to  5.36634E-01 mev   
+      5.36634E-01  to  5.45545E-01 mev   
+      5.45545E-01  to  5.54455E-01 mev   
+      5.54455E-01  to  5.63366E-01 mev   
+      5.63366E-01  to  5.72277E-01 mev   
+      5.72277E-01  to  5.81188E-01 mev   
+      5.81188E-01  to  5.90099E-01 mev   
+      5.90099E-01  to  5.99010E-01 mev   
+      5.99010E-01  to  6.07921E-01 mev   
+      6.07921E-01  to  6.16832E-01 mev   
+      6.16832E-01  to  6.25743E-01 mev   
+      6.25743E-01  to  6.34653E-01 mev   
+      6.34653E-01  to  6.43564E-01 mev   
+      6.43564E-01  to  6.52475E-01 mev   
+      6.52475E-01  to  6.61386E-01 mev   
+      6.61386E-01  to  6.70297E-01 mev   
+      6.70297E-01  to  6.79208E-01 mev   
+      6.79208E-01  to  6.88119E-01 mev   
+      6.88119E-01  to  6.97030E-01 mev   
+      6.97030E-01  to  7.05941E-01 mev   
+      7.05941E-01  to  7.14851E-01 mev   
+      7.14851E-01  to  7.23762E-01 mev   
+      7.23762E-01  to  7.32673E-01 mev   
+      7.32673E-01  to  7.41584E-01 mev   
+      7.41584E-01  to  7.50495E-01 mev   
+      7.50495E-01  to  7.59406E-01 mev   
+      7.59406E-01  to  7.68317E-01 mev   
+      7.68317E-01  to  7.77228E-01 mev   
+      7.77228E-01  to  7.86139E-01 mev   
+      7.86139E-01  to  7.95050E-01 mev   
+      7.95050E-01  to  8.03960E-01 mev   
+      8.03960E-01  to  8.12871E-01 mev   
+      8.12871E-01  to  8.21782E-01 mev   
+      8.21782E-01  to  8.30693E-01 mev   
+      8.30693E-01  to  8.39604E-01 mev   
+      8.39604E-01  to  8.48515E-01 mev   
+      8.48515E-01  to  8.57426E-01 mev   
+      8.57426E-01  to  8.66337E-01 mev   
+      8.66337E-01  to  8.75248E-01 mev   
+      8.75248E-01  to  8.84158E-01 mev   
+      8.84158E-01  to  8.93069E-01 mev   
+      8.93069E-01  to  9.01980E-01 mev   
+      9.01980E-01  to  9.10891E-01 mev   
+      9.10891E-01  to  9.19802E-01 mev   
+      9.19802E-01  to  9.28713E-01 mev   
+      9.28713E-01  to  9.37624E-01 mev   
+      9.37624E-01  to  9.46535E-01 mev   
+      9.46535E-01  to  9.55446E-01 mev   
+      9.55446E-01  to  9.64356E-01 mev   
+      9.64356E-01  to  9.73267E-01 mev   
+      9.73267E-01  to  9.82178E-01 mev   
+      9.82178E-01  to  9.91089E-01 mev   
+      9.91089E-01  to  1.00000E+00 mev   
+      total bin
+
+1tally      114                                                                                         print table 30
+           tally type 4    track length estimate of particle flux.                        
+           tally for  neutrons 
+ cells     1                                                                                                                           
+
+ energy bins
+      0.00000E+00  to  1.00000E+00 mev   
+      1.00000E+00  to  1.08911E+00 mev   
+      1.08911E+00  to  1.17822E+00 mev   
+      1.17822E+00  to  1.26733E+00 mev   
+      1.26733E+00  to  1.35644E+00 mev   
+      1.35644E+00  to  1.44554E+00 mev   
+      1.44554E+00  to  1.53465E+00 mev   
+      1.53465E+00  to  1.62376E+00 mev   
+      1.62376E+00  to  1.71287E+00 mev   
+      1.71287E+00  to  1.80198E+00 mev   
+      1.80198E+00  to  1.89109E+00 mev   
+      1.89109E+00  to  1.98020E+00 mev   
+      1.98020E+00  to  2.06931E+00 mev   
+      2.06931E+00  to  2.15842E+00 mev   
+      2.15842E+00  to  2.24752E+00 mev   
+      2.24752E+00  to  2.33663E+00 mev   
+      2.33663E+00  to  2.42574E+00 mev   
+      2.42574E+00  to  2.51485E+00 mev   
+      2.51485E+00  to  2.60396E+00 mev   
+      2.60396E+00  to  2.69307E+00 mev   
+      2.69307E+00  to  2.78218E+00 mev   
+      2.78218E+00  to  2.87129E+00 mev   
+      2.87129E+00  to  2.96040E+00 mev   
+      2.96040E+00  to  3.04950E+00 mev   
+      3.04950E+00  to  3.13861E+00 mev   
+      3.13861E+00  to  3.22772E+00 mev   
+      3.22772E+00  to  3.31683E+00 mev   
+      3.31683E+00  to  3.40594E+00 mev   
+      3.40594E+00  to  3.49505E+00 mev   
+      3.49505E+00  to  3.58416E+00 mev   
+      3.58416E+00  to  3.67327E+00 mev   
+      3.67327E+00  to  3.76238E+00 mev   
+      3.76238E+00  to  3.85149E+00 mev   
+      3.85149E+00  to  3.94059E+00 mev   
+      3.94059E+00  to  4.02970E+00 mev   
+      4.02970E+00  to  4.11881E+00 mev   
+      4.11881E+00  to  4.20792E+00 mev   
+      4.20792E+00  to  4.29703E+00 mev   
+      4.29703E+00  to  4.38614E+00 mev   
+      4.38614E+00  to  4.47525E+00 mev   
+      4.47525E+00  to  4.56436E+00 mev   
+      4.56436E+00  to  4.65347E+00 mev   
+      4.65347E+00  to  4.74257E+00 mev   
+      4.74257E+00  to  4.83168E+00 mev   
+      4.83168E+00  to  4.92079E+00 mev   
+      4.92079E+00  to  5.00990E+00 mev   
+      5.00990E+00  to  5.09901E+00 mev   
+      5.09901E+00  to  5.18812E+00 mev   
+      5.18812E+00  to  5.27723E+00 mev   
+      5.27723E+00  to  5.36634E+00 mev   
+      5.36634E+00  to  5.45545E+00 mev   
+      5.45545E+00  to  5.54455E+00 mev   
+      5.54455E+00  to  5.63366E+00 mev   
+      5.63366E+00  to  5.72277E+00 mev   
+      5.72277E+00  to  5.81188E+00 mev   
+      5.81188E+00  to  5.90099E+00 mev   
+      5.90099E+00  to  5.99010E+00 mev   
+      5.99010E+00  to  6.07921E+00 mev   
+      6.07921E+00  to  6.16832E+00 mev   
+      6.16832E+00  to  6.25743E+00 mev   
+      6.25743E+00  to  6.34653E+00 mev   
+      6.34653E+00  to  6.43564E+00 mev   
+      6.43564E+00  to  6.52475E+00 mev   
+      6.52475E+00  to  6.61386E+00 mev   
+      6.61386E+00  to  6.70297E+00 mev   
+      6.70297E+00  to  6.79208E+00 mev   
+      6.79208E+00  to  6.88119E+00 mev   
+      6.88119E+00  to  6.97030E+00 mev   
+      6.97030E+00  to  7.05941E+00 mev   
+      7.05941E+00  to  7.14851E+00 mev   
+      7.14851E+00  to  7.23762E+00 mev   
+      7.23762E+00  to  7.32673E+00 mev   
+      7.32673E+00  to  7.41584E+00 mev   
+      7.41584E+00  to  7.50495E+00 mev   
+      7.50495E+00  to  7.59406E+00 mev   
+      7.59406E+00  to  7.68317E+00 mev   
+      7.68317E+00  to  7.77228E+00 mev   
+      7.77228E+00  to  7.86139E+00 mev   
+      7.86139E+00  to  7.95050E+00 mev   
+      7.95050E+00  to  8.03960E+00 mev   
+      8.03960E+00  to  8.12871E+00 mev   
+      8.12871E+00  to  8.21782E+00 mev   
+      8.21782E+00  to  8.30693E+00 mev   
+      8.30693E+00  to  8.39604E+00 mev   
+      8.39604E+00  to  8.48515E+00 mev   
+      8.48515E+00  to  8.57426E+00 mev   
+      8.57426E+00  to  8.66337E+00 mev   
+      8.66337E+00  to  8.75248E+00 mev   
+      8.75248E+00  to  8.84158E+00 mev   
+      8.84158E+00  to  8.93069E+00 mev   
+      8.93069E+00  to  9.01980E+00 mev   
+      9.01980E+00  to  9.10891E+00 mev   
+      9.10891E+00  to  9.19802E+00 mev   
+      9.19802E+00  to  9.28713E+00 mev   
+      9.28713E+00  to  9.37624E+00 mev   
+      9.37624E+00  to  9.46535E+00 mev   
+      9.46535E+00  to  9.55446E+00 mev   
+      9.55446E+00  to  9.64356E+00 mev   
+      9.64356E+00  to  9.73267E+00 mev   
+      9.73267E+00  to  9.82178E+00 mev   
+      9.82178E+00  to  9.91089E+00 mev   
+      9.91089E+00  to  1.00000E+01 mev   
+      total bin
+1material composition                                                                                   print table 40
+
+ the sum of the fractions of material        3 was 1.000000E+02
+
+ material
+  number     component nuclide, atom fraction
+
+        1           92235, 1.00000E+00
+        2            4009, 1.00000E+00
+ associated thermal s(a,b) data sets:      be.60t                                                                        
+        3           26054, 7.19978E-01      28058, 9.31002E-02      24052, 1.86922E-01
+
+
+
+
+
+ material
+  number     component nuclide, mass fraction
+
+        1           92235, 1.00000E+00
+        2            4009, 1.00000E+00
+        3           26054, 7.20000E-01      28058, 1.00000E-01      24052, 1.80000E-01
+ 
+  warning.    1 materials had unnormalized fractions. print table 40.
+1cell volumes and masses                                                                                print table 50
+
+              cell     atom          gram         input       calculated                            reason volume
+                      density       density       volume        volume         mass       pieces    not calculated
+
+        1        1  4.82954E-02   1.88500E+01   0.00000E+00   5.55647E+02   1.04739E+04      1                      
+        2        2  1.23619E-01   1.85000E+00   0.00000E+00   1.12542E+05   2.08202E+05      1                      
+        3        3  8.59687E-02   7.70000E+00   0.00000E+00   6.64970E+04   5.12027E+05      1                      
+        4        4  0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      infinite        
+1surface areas                                                                                          print table 50
+
+           surface    input      calculated    reason area
+                      area          area       not calculated
+
+        1        1    0.00000E+00   3.26851E+02                   
+        2        2    0.00000E+00   1.13097E+04                   
+        3        3    0.00000E+00   1.53938E+04                   
+1cells                                                                                                  print table 60
+
+                               atom        gram                                            neutron                                     
+              cell     mat    density     density     volume       mass            pieces importance                                   
+
+        1        1        1  4.82954E-02 1.88500E+01 5.55647E+02 1.04739E+04           1  1.0000E+00                                   
+        2        2        2s 1.23619E-01 1.85000E+00 1.12542E+05 2.08202E+05           1  1.0000E+00                                   
+        3        3        3  8.59687E-02 7.70000E+00 6.64970E+04 5.12027E+05           1  1.0000E+00                                   
+        4        4        0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00           0  0.0000E+00                                   
+
+ total                                               1.79594E+05 7.30703E+05
+1surfaces                                                                                               print table 70
+
+           surface        trans  type   surface coefficients
+
+        1        1                so    5.1000000E+00
+        2        2                so    3.0000000E+01
+        3        3                so    3.5000000E+01
+1  cell temperatures in mev for the free-gas thermal neutron treatment.                                 print table 72
+
+     time:      0.0000E+00
+
+      cell         tmp 1
+        1        6.6350E-09
+        2        2.5300E-08
+        3        6.6350E-09
+
+ ***************************************************
+ * Random Number Generator  =                    1 *
+ * Random Number Seed       =       19073486328125 *
+ * Random Number Multiplier =       19073486328125 *
+ * Random Number Adder      =                    0 *
+ * Random Number Bits Used  =                   48 *
+ * Random Number Stride     =               152917 *
+ ***************************************************
+
+
+          1 warning message so far.
+
+          1 fatal error so far.
+1physical constants                                                                                     print table 98
+
+
+   name                    value     description
+
+   huge      1.0000000000000E+36     infinity
+    pie      3.1415926535898E+00     pi
+  euler      5.7721566490153E-01     euler constant
+ avogad      6.0220434469282E+23     avogadro number (molecules/mole)
+  aneut      1.0086649670000E+00     neutron mass (amu)
+  avgdn      5.9703109000000E-01     avogadro number/neutron mass (1.e-24*molecules/mole/amu)
+  slite      2.9979250000000E+02     speed of light (cm/shake)
+ planck      4.1357320000000E-13     planck constant (mev shake)
+  fscon      1.3703930000000E+02     inverse fine structure constant h*c/(2*pi*e**2)
+ gpt(1)      9.3958000000000E+02     neutron mass (mev)
+ gpt(3)      5.1100800000000E-01     electron mass (mev)
+
+
+ fission q-values:     nuclide    q(mev)   nuclide    q(mev)
+                         90232    171.91     91233    175.57
+                         92233    180.84     92234    179.45
+                         92235    180.88     92236    179.50
+                         92237    180.40     92238    181.31
+                         92239    180.40     92240    180.40
+                         93237    183.67     94238    186.65
+                         94239    189.44     94240    186.36
+                         94241    188.99     94242    185.98
+                         94243    187.48     95241    190.83
+                         95242    190.54     95243    190.25
+                         96242    190.49     96244    190.49
+                         other    180.00
+
+
+ the following compilation options were used:
+
+     unix
+     plot
+     mcplot
+     xlib
+     linux
+     mpi
+     default datapath: /usr/local/mcnp5_lib                                                            
+1cross-section tables                                                                                   print table 100
+
+     table    length
+
+                        tables from file endf60                                                          
+
+   4009.60c   62552  4-be-9 from endf-vi                                                          mat 425      11/25/93
+
+                        tables from file endf66d                                                         
+
+  24052.64c  175905  24-cr-52 at 77.K from endf-vi.6 njoy99.50                                    mat2431      07/13/01
+  26054.64c  146838  26-fe-54 at 77.K from endf-vi.6 njoy99.50                                    mat2625      07/13/01
+  28058.64c  241851  28-ni-58 at 77.K from endf-vi.6 njoy99.50                                    mat2825      07/13/01
+  92235.64c  889939  92-u-235 at 77.K from endf-vi.5 njoy99.50          total nu                  mat9228      08/14/01
+                     probability tables used from 2.2500E-03 to 2.5000E-02 mev.
+
+                        tables from file sab2002                                                         
+
+     be.60t   63436  4-be-9 in be at 293.6k from endf-vi njoy99.0                            4009     0     0  09/13/99
+
+  total     1580521
+1assignment of s(a,b) data to nuclides.                                                                 print table 102
+
+       mat        nuclide         s(a,b)
+         2       4009.60c         be.60t
+
+          1 warning message so far.
+
+          1 fatal error so far.
+
+
+ run terminated because of fatal errors.
+
+ computer time =    0.03 minutes
+
+ mcnp     version 5.mpi 01252018                     03/18/18 22:56:11                     probid =  03/18/18 22:56:09 
